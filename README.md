@@ -6,7 +6,7 @@ Android 9 では、セルラー回線が有効になっているとブラウザ�
 
 ## 使い方
 
-THETA と接続できていて、プラグインが起動している状態で、画面右下の REFRESH ボタンをタップしてください。下の画面は [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) の Web UI を表示している例です。
+THETA と接続できていて、プラグインが起動している状態で、画面右下の REFRESH ボタンをタップしてください。下の画面は [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) の Web UI を表示している例です。
 
 ![スクリーンショット](screenshot.png)
 
