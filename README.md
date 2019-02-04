@@ -1,19 +1,22 @@
 # THETA Plug-in Web UI Browser
 
-Android 9 Pie でも THETA プラグインの Web UI にアクセスできる超簡易ブラウザ
+Android 9 でも THETA プラグインの Web UI にアクセスできる超簡易ブラウザ
 
-Android 9 では、セルラー回線が有効になっているとブラウザが THETA プラグインの Web UI に接続できなくて面倒くさいので作った。
+Android 9 では、セルラー回線が有効になっているとブラウザが THETA プラグインの Web UI に接続できなくて面倒くさいので作りました。
 
 ## 使い方
 
-THETA と接続できていて、プラグインが起動している状態で、画面右下の REFRESH ボタンをタップしてください。下の画面は [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) の Web UI を表示している例です。
+THETA と接続して、プラグインを起動して、本アプリを起動してください。
 
-![スクリーンショット](screenshot.png)
+読み込みに失敗した場合は画面を下方向に引っ張ってリロードできます。
+
+下の画面は [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) の Web UI を表示している例です。
+
+![スクリーンショット](image/screenshot.png)
 
 ## 制限事項
 
 * THETA がクライアントモードの場合は接続できません。 (THETAのIPアドレスを解決できないため)
-* 戻る/進むボタンはありません。
 
 ## 技術的な話
 
