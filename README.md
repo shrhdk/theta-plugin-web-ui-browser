@@ -1,28 +1,30 @@
 # THETA Plug-in Web UI Browser
 
-Android 9 でも THETA プラグインの Web UI にアクセスできる超簡易ブラウザ
+Simple web browser that can access the web UI of THETA plug-in even on Android 9. ([日本語版はこちら](README.ja.md))
 
-Android 9 では、セルラー回線が有効になっているとブラウザが THETA プラグインの Web UI に接続できなくて面倒くさいので作りました。
+On Android 9, when the cellular network is enabled, the the browser can not connect to the web UI of the THETA plugin.
 
-## 使い方
+## Usage
 
-THETA と接続して、プラグインを起動して、本アプリを起動してください。
+Connect with THETA, start up the plugin, and start this application.
 
-読み込みに失敗した場合は画面を下方向に引っ張ってリロードできます。
+You can reload by swiping down the screen.
 
-下の画面は [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) の Web UI を表示している例です。
+The screen below shows an example displaying the [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) Web UI.
 
-![スクリーンショット](image/screenshot.png)
+![Screenshot](image/screenshot.png)
 
-## 制限事項
+## Known Issues
 
-* THETA がクライアントモードの場合は接続できません。 (THETAのIPアドレスを解決できないため)
+* It can not connect if THETA is in Wi-Fi client mode.
 
-## 技術的な話
+## Technical Information
 
-こちらの記事を参考にしました。 → [THETA用の非公式写真転送・シャッターアプリを作ってる | muo notes](https://notes.muo.jp/1810_theta-app.html)
+I referred to this article. Thanks Kei Nakazawa-san.
 
-やっていることは2つだけ
+[THETA用の非公式写真転送・シャッターアプリを作ってる | muo notes](https://notes.muo.jp/1810_theta-app.html)
 
-* bindProcessToNetwork で Wi-Fi ネットワークにバインドする。
-* Cleartext Traffiic を許可 (HTTP を許可)
+There are only two things I do
+
+* Call [bindProcessToNetwork](https://developer.android.com/reference/android/net/ConnectivityManager.html#bindProcessToNetwork(android.net.Network)) to bind process to Wi-Fi network.
+* Allow Cleartext Traffic. See [Android Developers Blog: Protecting users with TLS by default in Android P](https://android-developers.googleblog.com/2018/04/protecting-users-with-tls-by-default-in.html).
