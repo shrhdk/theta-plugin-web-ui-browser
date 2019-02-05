@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.theta4j.webui
+package be.shiro.theta.webui
 
 import android.content.Context
 import android.net.ConnectivityManager

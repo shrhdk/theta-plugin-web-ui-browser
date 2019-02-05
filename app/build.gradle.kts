@@ -25,7 +25,7 @@ plugins {
 android {
     compileSdkVersion(28)
     defaultConfig {
-        applicationId = "org.theta4j.webui"
+        applicationId = "be.shiro.theta.webui"
         minSdkVersion(28)
         targetSdkVersion(28)
         versionCode = 2
