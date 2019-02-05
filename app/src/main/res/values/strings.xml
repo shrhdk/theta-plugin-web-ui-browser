@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Web UI Browser</string>
     <string name="icon_label">Web UI</string>
-    <string name="refresh_label">Refresh</string>
 </resources>
