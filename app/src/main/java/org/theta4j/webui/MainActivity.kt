@@ -26,6 +26,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     companion object {
+        private val INITIAL_URL = "file:///android_asset/initial_view.html"
         private val PLUGIN_URL = "http://192.168.1.1:8888";
     }
 
@@ -41,15 +42,18 @@ class MainActivity : AppCompatActivity() {
         web_view.settings.javaScriptEnabled = true
         web_view.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView?, url: String?) {
-                super.onPageFinished(view, url)
-                swipe_refresh.isRefreshing = false
+                if (web_view.url == INITIAL_URL) {
+                    swipe_refresh.isRefreshing = true
+                    refresh()
+                } else {
+                    super.onPageFinished(view, url)
+                    swipe_refresh.isRefreshing = false
+                }
             }
         }
+        web_view.loadUrl(INITIAL_URL)
 
         swipe_refresh.setOnRefreshListener { refresh() }
-
-        swipe_refresh.isRefreshing = true
-        refresh()
     }
 
     override fun onDestroy() {
