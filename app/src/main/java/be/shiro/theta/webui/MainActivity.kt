@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     private var connManager: ConnectionManager? = null
 
+    private var firstTime = true
+
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,12 +43,15 @@ class MainActivity : AppCompatActivity() {
 
         web_view.settings.javaScriptEnabled = true
         web_view.webViewClient = object : WebViewClient() {
-            override fun onPageFinished(view: WebView?, url: String?) {
-                if (web_view.url == INITIAL_URL) {
+            override fun onPageFinished(view: WebView, url: String) {
+                if (url == INITIAL_URL) {
                     swipe_refresh.isRefreshing = true
                     refresh()
                 } else {
-                    super.onPageFinished(view, url)
+                    if (firstTime) {
+                        firstTime = false
+                        web_view.clearHistory()
+                    }
                     swipe_refresh.isRefreshing = false
                 }
             }
