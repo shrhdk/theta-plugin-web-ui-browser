@@ -2,7 +2,7 @@
 
 Simple web browser that can access the web UI of THETA plug-in even on Android 9. ([日本語版はこちら](README.ja.md))
 
-On Android 9, when the cellular network is enabled, the the browser can not connect to the web UI of the THETA plugin.
+On Android 9, when the cellular network is enabled, the browser can not connect to the web UI of the THETA plugin.
 
 ## Usage
 
