@@ -28,8 +28,8 @@ android {
         applicationId = "org.theta4j.webui"
         minSdkVersion(28)
         targetSdkVersion(28)
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.0.1"
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
@@ -43,6 +43,15 @@ android {
             proguardFile("proguard-rules.pro")
         }
     }
+    signingConfigs {
+        create("release") {
+            storeFile = rootProject.file("theta-plugin-web-ui-browser.keystore")
+            storePassword = properties["android.keystore.password"] as String
+            keyAlias = properties["android.keystore.alias"] as String
+            keyPassword = properties["android.keystore.private_key_password"] as String
+        }
+    }
+    buildTypes["release"].signingConfig = signingConfigs["release"]
 }
 
 dependencies {
