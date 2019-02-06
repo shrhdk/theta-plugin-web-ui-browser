@@ -20,7 +20,7 @@ THETA と接続して、プラグインを起動して、本アプリを起動�
 
 ## 技術的な話
 
-こちらの記事を参考にしました。Kei Nakazawa さん、ありがとうございます。
+こちらの記事を参考にしました。Kei Nakazawa さん、ありがとうございます。
 
 [THETA用の非公式写真転送・シャッターアプリを作ってる | muo notes](https://notes.muo.jp/1810_theta-app.html)
 
