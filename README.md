@@ -4,6 +4,10 @@ Simple web browser that can access the web UI of THETA plug-in even on Android 9
 
 On Android 9, when the cellular network is enabled, the browser can not connect to the web UI of the THETA plugin.
 
+It is available on Google Play.
+
+<a href='https://play.google.com/store/apps/details?id=be.shiro.theta.webui'><img alt='Get it on Google Play' src='https://play.google.com/intl/ja/badges/images/generic/en_badge_web_generic.png' width='180px'/></a>
+
 ## Usage
 
 Connect with THETA, start up the plugin, and start this application.

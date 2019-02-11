@@ -4,6 +4,10 @@ Android 9 でも THETA プラグインの Web UI にアクセスできる超簡�
 
 Android 9 では、セルラー回線が有効になっているとブラウザが THETA プラグインの Web UI に接続できなくて面倒くさいので作りました。
 
+Google Play で配布中です。
+
+<a href='https://play.google.com/store/apps/details?id=be.shiro.theta.webui'><img alt='Google Play で手に入れよう' src='https://play.google.com/intl/ja/badges/images/generic/ja_badge_web_generic.png' width='180px'/></a>
+
 ## 使い方
 
 THETA と接続して、プラグインを起動して、本アプリを起動してください。
