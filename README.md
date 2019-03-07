@@ -1,8 +1,8 @@
 # THETA Plug-in Web UI Browser
 
-Simple web browser that can access the web UI of THETA plug-in even on Android 9. ([日本語版はこちら](README.ja.md))
+A simple web browser that can access the web UI of THETA plug-in even on Android 9. ([日本語版はこちら](README.ja.md))
 
-On Android 9, when the cellular network is enabled, the browser can not connect to the web UI of the THETA plugin.
+On Android 9, if cellular network is enabled, the browser can not connect to the THETA plug-in's web UI.
 
 It is available on Google Play.
 
@@ -10,11 +10,11 @@ It is available on Google Play.
 
 ## Usage
 
-Connect with THETA, start up the plugin, and start this application.
+Connect with THETA and start up the plug-in and start up this application.
 
 You can reload by swiping down the screen.
 
-The screen below shows an example displaying the [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/) Web UI.
+The following screen example displays the Web UI of [Meow Shot!](https://pluginstore.theta360.com/plugins/be.shiro.meowshot/).
 
 ![Screenshot](image/screenshot.png)
 
